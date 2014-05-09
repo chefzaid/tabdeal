@@ -1,0 +1,110 @@
+<hr class="topbar"/>
+<div class="container">
+	<div class="row">
+		<!-- Account Menu include -->
+		<div ng-include="'includes/account-menu.html'"></div>
+
+		<div class="col-sm-9">
+			<form class="form-vertical" action="account_ad_create.html">
+				<div class="panel panel-default">
+					<div class="panel-heading">Choix de cat&eacute;gorie</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="row">
+										<div class="col-sm-2" style="margin-top: 10px;">
+											<label>Cat&eacute;gorie</label>
+										</div>
+										<div class="col-sm-6">
+											<select id="category" class="form-control " name="category">
+												<option value="">Choisir une cat&eacute;gorie</option>
+												<optgroup label="Vehicles">
+													<option value="8">&nbsp;&nbsp;&nbsp;Cars</option>
+													<option value="9">&nbsp;&nbsp;&nbsp;Motorcycles</option>
+													<option value="10">&nbsp;&nbsp;&nbsp;Boats</option>
+													<option value="15">&nbsp;&nbsp;&nbsp;Everything Else</option>
+												</optgroup>
+												<optgroup label="Real Estate">
+													<option value="16">&nbsp;&nbsp;&nbsp;Homes For Sale</option>
+													<option value="17">&nbsp;&nbsp;&nbsp;Homes for Rent</option>
+													<option value="24">&nbsp;&nbsp;&nbsp;Agents &amp; Services</option>
+												</optgroup>
+											</select>
+										</div>
+									</div>
+								</div>			
+							</div>			
+						</div>			
+					</div>			
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">Details de l'annonce</div>
+					<div class="panel-body">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-12">
+									<label>Titre</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-sm-12"><br />
+									<label>Description</label>
+									<textarea class="form-control col-sm-8 expand" rows="6" style="width: 99%"></textarea>
+								</div>
+								<div class="col-sm-12"><br />
+									<label>Mots-cl&eacute;s</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-sm-12"><br />
+									<label>Ville</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-sm-12"><br />
+									<label>Code postal</label>
+									<input type="text" class="form-control">
+								</div>								
+							</div>
+						</div>
+					</div>			
+				</div>			
+				<div class="panel panel-default">
+					<div class="panel-heading">Photos</div>
+					<div class="panel-body">
+						<div id="my-dropzone" action="upload.php" class="dropzone"></div>
+						<br /><p><small>* please note that the displayed images are cropped/resized only for display purposes</small></p>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">Vos souhaits</div>
+					<div class="panel-body">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-6">
+									<input type="text" class="form-control" placeholder="Que souhaitez vous en &eacute;change ?">
+								</div>
+								<div class="col-sm-6">
+									<p>Vous pouvez modifier votre liste des souhaits quand vous voulez, m&ecirc;me apr&egrave;s publication</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="panel panel-default">
+					<div class="panel-heading">Compl&eacute;ter l'annonce</div>
+					<div class="panel-body">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> J'accepte les conditions d'utilisation du site.
+							</label>
+						</div>
+						<br />
+						<button type="submit" class="btn btn-default hidden-xs">Sauvegarder brouillon</button>
+						<button type="submit" class="btn btn-default hidden-xs">Aper&ccedil;u</button>
+						<a href="account_credits.html" class="btn btn-primary pull-right"><i class="icon-ok"></i>Publier</a>
+						<br /><p class=" hidden-xs" style="text-align: right"><small>* l'annonce ne sera publi&eacute;e<br /> qu'apr&egrave;s validation</small></p>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

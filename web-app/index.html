@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="tabdylApp">
+	<head>
+		<title>Tabdyl - Echangez simplement !</title>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<!-- Fav icon -->
+		<link rel="shortcut icon" href="http://templates.expresspixel.com/assets/ico/favicon.png">
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" id="switch_style"  />
+		<!-- Custom styles for this template -->
+		<link rel="stylesheet" type="text/css" href="css/theme.css" />
+		<!-- Plugins styles -->
+		<link rel="stylesheet" type="text/css" href="css/plugins/dropzone.css" />
+		<link rel="stylesheet" type="text/css" href="js/plugins/jquery.fancybox.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="js/plugins/jquery.fancybox-buttons.css" media="screen" />
+		<!-- Font style -->
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+		
+		<!-- IE compatibility modifications -->
+		<!--[if lt IE 9]>
+
+		<![endif]-->
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#/home" class="navbar-brand">
+						<span class="logo"><span class="handwriting pull-left">Tabd<strong>y</strong>l</span><br />
+							<small >Echangez simplement !</small></span>
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse">
+					<div class="nav navbar-nav navbar-right hidden-xs">
+						<div class="row">
+							<div class="pull-right">
+								<a data-toggle="modal" data-target="#modalLogin" href="javascript:void(0);">Connexion</a> | 
+								<a href="#/register">Inscription</a> | 
+								<a href="#/listings">Annonces</a> | 
+								<a href="#/account_dashboard">Mon compte</a>
+								<a href="#/post-ad" class="btn btn-warning post-ad-btn">D&eacute;poser une annonce</a>
+
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- Placeholder for the changing views-->
+		<div ng-view></div>
+	
+		<!-- Modal Sign in-->
+		<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Se connecter &agrave; votre compte</h4>
+					</div>
+					<div class="modal-body">
+						<p>Si vous avez un compte, veuillez renseigner les informations ci-dessous.</p>
+						<form method="POST" action="#/account_dashboard" accept-charset="UTF-8" id="user-login-form" class="form ajax" data-replace=".error-message p">
+							<div class="form-group">
+								<input placeholder="Nom d'utilisateur ou email" class="form-control" name="email" type="text">
+							</div>
+							<div class="form-group">
+								<input placeholder="Mot de passe" class="form-control" name="password" type="password" value="">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Rester connect&eacute;
+								</label>
+                            </div>
+							<div class="row">
+								<div class="col-md-6"></div>
+								<div class="col-md-6">
+									<button type="submit" class="btn btn-primary pull-right">Connexion</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<a data-toggle="modal" href="#modalForgot">Mot de passe oubli&eacute; ?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer" style="text-align: center">
+						<div class="error-message"><p style="color: #000; font-weight: normal;">Vous n'avez pas de compte ? <a class="link-info" href="#/register">Inscrivez vous</a></p></div>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+
+		<!-- Modal Password forgot -->
+		<div class="modal fade" id="modalForgot" tabindex="-1" role="dialog" aria-labelledby="modalForgot" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Vous avez oubli&eacute; votre mot de passe ?</h4>
+					</div>
+					<div class="modal-body">
+						<p>Entrez votre email pour continuer</p>
+						<form role="form">
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Votre email">
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+								</div><div class="col-md-6">
+								<a href="#/my_account" class="btn btn-primary pull-right">Continuer</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<p><strong>&copy; Tabdyl 2014</strong></p>
+						<p>Tous droits r&eacute;serv&eacute;s.</p>
+					</div>			
+					<div class="col-sm-8 col-xs-12">
+						<p class="footer-links">
+							<a href="#/home" class="active">Accueil</a>
+							<a href="#/help">Aide</a>
+							<a href="#/terms">CGU</a>
+							<a href="#/contact">Contact</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Frameworks JS files -->
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/angular-1.2.16.min.js"></script>
+		<script type="text/javascript" src="js/angular-route.min.js"></script>
+		<!-- Plugins JS files -->
+		<script type="text/javascript" src="js/plugins/jquery.flot.js"></script>
+		<script type="text/javascript" src="js/plugins/dropzone.js"></script>
+		<script type="text/javascript" src="js/plugins/jquery.fancybox.js"></script>
+		<script type="text/javascript" src="js/plugins/jquery.fancybox-buttons.js"></script>
+		<script type="text/javascript" src="js/plugins/jquery.fancybox-media.js"></script>
+		<script type="text/javascript" src="js/plugins/global.js"></script>
+		<!-- App specific JS files -->
+		<script type="text/javascript" src="js/app/app.js"></script>
+		<script type="text/javascript" src="js/app/controllers.js"></script>
+	</body>
+</html>
