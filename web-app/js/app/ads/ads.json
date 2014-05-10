@@ -1,0 +1,14 @@
+[
+ {
+  "id": 1,
+  "title": "Friteuse Moulinex",
+  "description": "Friteuse Moulinex contre 4 poeles Tefal.",
+  "imageUrl": "./static/js/app/ads/img/moulinex.jpg"
+ },
+{
+  "id": 2,
+  "title": "Polo 1.4",
+  "description": "Polo 1.4 contre Polo 1.2.",
+  "imageUrl": "./static/js/app/ads/img/polo1_4.jpg"
+ }
+]
