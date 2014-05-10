@@ -22,6 +22,8 @@
 		<!-- Font style -->
 		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
 		
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		
 		<!-- IE compatibility modifications -->
 		<!--[if lt IE 9]>
 
@@ -61,7 +63,10 @@
 		</nav>
 		
 		<!-- Placeholder for the changing views-->
-		<div ng-view></div>
+	  <div class="view-container">
+	    <div ng-view class="view-frame"></div>
+	  </div>
+		
 	
 		<!-- Modal Sign in-->
 		<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true">

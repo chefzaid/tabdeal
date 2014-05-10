@@ -12,7 +12,7 @@
 							<div class="col-sm-10 col-sm-offset-1">
 								<div class="input-group">
 									<span class="input-group-addon input-group-addon-text">Je veux un(e)</span>
-									<input type="text" class="form-control col-sm-3" placeholder="ex : iPhone 5, Galaxy 5, ... ">
+									<input type="text" class="form-control col-sm-3" placeholder="ex : iPhone 5, Galaxy 5, ... " ng-model="query">
 									<div class=" input-group-addon hidden-xs">
 										<div class="btn-group" >
 											<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
@@ -34,13 +34,27 @@
 						</div>
 					</div>
 				</div>
+
 				<br />
 				<br />
 				<div class="row">
 					<div class="col-sm-12" style="text-align: center">
 						<a href="listings.html" class="btn btn-primary search-btn">Rechercher</a>
 					</div>
-				</div>				
+				</div>
+				<br />
+				<div class="col-md-10">
+					<!--Body content-->
+
+					<ul class="ads">
+						<li ng-repeat="ad in ads | filter:query" class="thumbnail">
+						<a href="#/ads/{{ad.id}}" class="thumb"><img ng-src="{{ad.imageUrl}}"></a>
+						<a href="#/ads/{{ad.id}}">{{ad.title}}</a>
+							<p>{{ad.description}}</p>
+					</ul>
+
+				</div>
+
 				<br />
 				<br />
 				<div class="row">

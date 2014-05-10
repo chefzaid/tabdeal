@@ -2,9 +2,12 @@
 
 var tabdylControllers = angular.module('tabdylControllers', []);
 
-tabdylControllers.controller('HomeCtrl', ['$scope', 
-  function($scope) {
+tabdylControllers.controller('HomeCtrl', ['$scope','$http', 
+  function($scope,$http) {
     $scope.pageTitle = 'Accueil';
+    $http.get('./static/js/app/ads/ads.json').success(function(data) {
+        $scope.ads = data;
+      });
   }]);
 
 tabdylControllers.controller('RegisterCtrl', ['$scope', 
