@@ -5,6 +5,11 @@ var tabdylControllers = angular.module('tabdylControllers', []);
 tabdylControllers.controller('HomeCtrl', ['$scope','$http', 
   function($scope,$http) {
     $scope.pageTitle = 'Accueil';
+  }]);
+
+tabdylControllers.controller('ExampleCtrl', ['$scope','$http', 
+  function($scope,$http) {
+    $scope.pageTitle = 'Example';
     $http.get('./static/js/app/ads/ads.json').success(function(data) {
         $scope.ads = data;
       });

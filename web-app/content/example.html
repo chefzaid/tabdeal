@@ -1,0 +1,60 @@
+
+<div class="jumbotron home-search" style="">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<br />
+				<p class="main_description">Rechercher, prenez contact et puis &eacute;changer. En toute simplicit&eacute; !</p>
+				<br /><br />
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2" style="text-align: center">
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1">
+								<div class="input-group">
+									<span class="input-group-addon input-group-addon-text">Je veux un(e)</span>
+									<input type="text" class="form-control col-sm-3" placeholder="ex : iPhone 5, Galaxy 5, ... " ng-model="query">
+									<div class=" input-group-addon hidden-xs">
+										<div class="btn-group" >
+											<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+												Toutes les cat&eacute;gories <span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="index.html#">Cars, Vans & Motorbikes</a></li>
+												<li><a href="index.html#">Community</a></li>
+												<li><a href="index.html#">Flats & Houses</a></li>
+												<li><a href="index.html#">For Sale</a></li>
+												<li><a href="index.html#">Jobs</a></li>
+												<li><a href="index.html#">Pets</a></li>
+												<li><a href="index.html#">Services</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<br />
+				<br />
+				<div class="row">
+					<div class="col-sm-12" style="text-align: center">
+						<a href="listings.html" class="btn btn-primary search-btn">Rechercher</a>
+					</div>
+				</div>
+				<br />
+				<div class="col-md-10">
+					<!--Body content-->
+
+					<ul class="ads">
+						<li ng-repeat="ad in ads | filter:query" class="thumbnail">
+						<a href="#/ads/{{ad.id}}" class="thumb"><img ng-src="{{ad.imageUrl}}"></a>
+						<a href="#/ads/{{ad.id}}">{{ad.title}}</a>
+							<p>{{ad.description}}</p>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
