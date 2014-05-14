@@ -14,7 +14,7 @@ tabdylApp.config(['$routeProvider',
 		}).
 		when('/example', {
 			templateUrl: 'content/example.html',
-			controller: 'HomeCtrl'
+			controller: 'ExampleCtrl'
 		}).
 		when('/register', {
 			templateUrl: 'content/register.html',

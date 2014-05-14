@@ -2,7 +2,7 @@
 
 var tabdylControllers = angular.module('tabdylControllers', []);
 
-tabdylControllers.controller('HomeCtrl', ['$scope','$http', 
+tabdylControllers.controller('HomeCtrl', ['$scope', 
   function($scope,$http) {
     $scope.pageTitle = 'Accueil';
   }]);

@@ -41,7 +41,7 @@ grails.project.dependency.resolution = {
         grailsCentral()
         mavenCentral()
 		
-		//mavenRepo 'http://maven.restlet.org/'
+		mavenRepo 'http://maven.restlet.org/' // necessary for JAX-RS plugin
 		
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://repository.codehaus.org"
@@ -62,7 +62,7 @@ grails.project.dependency.resolution = {
         // plugins for the compile step
         //compile ":scaffolding:2.0.2"
         compile ':cache:1.1.1'
-		//compile ':jaxrs:0.10'
+		compile ':jaxrs:0.10'
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.9" // or ":hibernate4:4.3.4"
