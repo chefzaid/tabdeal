@@ -1,4 +1,4 @@
-package ma.tabdy.model.rest
+package ma.tabdyl.model.rest
 
 import javax.ws.rs.GET
 import javax.ws.rs.Path

@@ -7,10 +7,18 @@ enum Rating {
 	STARS_3_5('3 / 5'),
 	STARS_4_5('4 / 5'),
 	STARS_5_5('5 / 5')
+
+	final String value
+
+	Rating(String value){
+		this.value = value
+	}
+
+	def String toString() {
+		value
+	}
 	
-	String status
-	
-	def AdStatus(String status){
-		this.status = status
+	def String getKey() {
+		name()
 	}
 }

@@ -4,9 +4,17 @@ enum AccountType {
 	PERSONAL('Particulier'),
 	PROFESSIONAL('Professionnel'),
 
-	String status
-	
-	def AdStatus(String status){
-		this.status = status
+	final String value
+
+	AccountType(String value){
+		this.value = value
+	}
+
+	def String toString() {
+		value
+	}
+
+	def String getKey() {
+		name()
 	}
 }
