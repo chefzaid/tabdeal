@@ -1,8 +1,8 @@
 package ma.tabdyl.model.service
 
-import ma.tabdyl.model.beans.Account;
 import ma.tabdyl.model.enums.AccountType;
 import ma.tabdyl.model.enums.Rating;
+import ma.tandyl.user.Account
 import grails.transaction.Transactional
 
 @Transactional

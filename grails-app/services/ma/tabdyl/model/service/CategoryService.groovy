@@ -1,7 +1,7 @@
 package ma.tabdyl.model.service
 
-import ma.tabdyl.model.beans.Category;
 import grails.transaction.Transactional
+import ma.tabdyl.ad.Category
 
 @Transactional
 class CategoryService {

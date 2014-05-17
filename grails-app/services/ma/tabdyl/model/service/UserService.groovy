@@ -1,7 +1,7 @@
 package ma.tabdyl.model.service
 
-import ma.tabdyl.model.beans.User;
 import grails.transaction.Transactional
+import ma.tandyl.user.User
 
 @Transactional
 class UserService {
