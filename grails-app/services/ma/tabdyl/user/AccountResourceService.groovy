@@ -1,7 +1,5 @@
 package ma.tabdyl.user
 
-import ma.tabdyl.model.enums.AccountType;
-import ma.tabdyl.model.enums.Rating;
 import ma.tabdyl.user.Account;
 
 import org.grails.jaxrs.provider.DomainObjectNotFoundException
