@@ -16,14 +16,6 @@ class AdResourceService {
         obj
     }
 
-	def findByCategory(Category category){
-		Ad.findAllByCategory(category);
-	}
-	
-    def readAll() {
-        Ad.findAll()
-    }
-
     def update(Ad dto) {
         def obj = Ad.get(dto.id)
         if (!obj) {
@@ -39,4 +31,12 @@ class AdResourceService {
             obj.delete()
         }
     }
+	
+	def findByCategory(Category category){
+		Ad.findAllByCategory(category);
+	}
+	
+	def readAll() {
+		Ad.findAll()
+	}
 }

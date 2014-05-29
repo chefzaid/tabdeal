@@ -18,18 +18,6 @@ class UserResourceService {
         obj
     }
 
-	def findByEmail(String email){
-		User.findAllByEmail(email);
-	}
-
-	def findByPhone(String phone){
-		User.findAllByPhone(phone);
-	}
-	
-    def readAll() {
-        User.findAll()
-    }
-
     def update(User dto) {
         def obj = User.get(dto.id)
         if (!obj) {
@@ -45,4 +33,16 @@ class UserResourceService {
             obj.delete()
         }
     }
+	
+	def findByEmail(String email){
+		User.findAllByEmail(email);
+	}
+
+	def findByPhone(String phone){
+		User.findAllByPhone(phone);
+	}
+	
+	def readAll() {
+		User.findAll()
+	}
 }

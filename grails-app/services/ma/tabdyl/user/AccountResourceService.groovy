@@ -18,22 +18,6 @@ class AccountResourceService {
         obj
     }
 
-	def findByLogin(String login){
-		Account.findAllByLogin(login);
-	}
-
-	def findByAccountType(AccountType type){
-		Account.findAllByType(type);
-	}
-
-	def findByRating(Rating rating){
-		Account.findAllByRating(rating);
-	}
-	
-    def readAll() {
-        Account.findAll()
-    }
-
     def update(Account dto) {
         def obj = Account.get(dto.id)
         if (!obj) {
@@ -49,4 +33,20 @@ class AccountResourceService {
             obj.delete()
         }
     }
+	
+	def findByLogin(String login){
+		Account.findAllByLogin(login);
+	}
+
+	def findByAccountType(AccountType type){
+		Account.findAllByType(type);
+	}
+
+	def findByRating(Rating rating){
+		Account.findAllByRating(rating);
+	}
+	
+	def readAll() {
+		Account.findAll()
+	}
 }

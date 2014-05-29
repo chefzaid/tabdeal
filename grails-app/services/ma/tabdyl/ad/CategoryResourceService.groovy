@@ -16,14 +16,6 @@ class CategoryResourceService {
         obj
     }
 
-	def findSubcategories(Category category){
-		category.findAllByParent(category);
-	}
-	
-    def readAll() {
-        Category.findAll()
-    }
-
     def update(Category dto) {
         def obj = Category.get(dto.id)
         if (!obj) {
@@ -39,4 +31,12 @@ class CategoryResourceService {
             obj.delete()
         }
     }
+	
+	def findSubcategories(Category category){
+		category.findAllByParent(category);
+	}
+	
+	def readAll() {
+		Category.findAll()
+	}
 }
