@@ -2,8 +2,8 @@
 
 var userController = angular.module('userController', []);
 
-userController.controller('RegisterController', ['$scope', '$window',
-  function($scope, $window) {
+userController.controller('RegisterController', ['$scope', '$window', '$http', 'UsersFactory',
+  function($scope, $window, $http, UsersFactory) {
 	
 	//Constructing days for birth date
 	var days = [];
@@ -24,6 +24,16 @@ userController.controller('RegisterController', ['$scope', '$window',
 		years.push(i);
 	}
 	$scope.years = years;
+	
+    $scope.createNewUser = function () { //it doesnt work, read/:id work btw
+      //UsersFactory.create($scope.user);
+//      $http
+//      .post('localhost:8080/Tabdyl/api/user', $scope.user)
+//      .success(function(data, status, headers, config) {
+//  
+//      }).error(function(data, status, headers, config) {
+//     });
+    }
 }]);
 
 userController.controller('AccountController', ['$scope', 

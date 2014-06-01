@@ -5,4 +5,4 @@ adService.factory('Ad', ['$resource',
     return $resource('api/ad/:adId.json', {}, {
       query: {method:'GET', params:{adId:'ads'}, isArray:true}
     });
-  }]);
+}]);

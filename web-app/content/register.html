@@ -6,7 +6,7 @@
 			<hr />
 			<div class="row">
 				<div class="col-sm-12 col-md-6">
-					<form class="form-vertical">
+					<form novalidate="novalidate" class="form-vertical">
 						<fieldset>
 							<div class="row">  
 								<div class="col-sm-12" >
@@ -22,7 +22,7 @@
 												</div>
 												<div class="col-sm-7">
 													<label for="name">Nom *</label>
-													<input type="text" class="form-control" id="name" placeholder="Nom">
+													<input ng-model="user.name" type="text" class="form-control" id="name" placeholder="Nom">
 												</div>
 											</div>
 										</div>
@@ -30,11 +30,11 @@
 											<div class="row">
 												<div class="col-sm-7">
 													<label for="email">Email *</label>
-													<input type="text" class="form-control " id="email" placeholder="Votre email">
+													<input ng-model="user.email" type="text" class="form-control " id="email" placeholder="Votre email">
 												</div>
 												<div class="col-sm-5">
 													<label for="phone">T&eacute;l&eacute;phone *</label>
-													<input type="text" class="form-control " id="phone" placeholder="N. de t&eacute;l&eacute;phone">
+													<input ng-model="user.phone" type="text" class="form-control " id="phone" placeholder="N. de t&eacute;l&eacute;phone">
 												</div>
 											</div>
 										</div>
@@ -99,7 +99,7 @@
 											</label>
 										</div>
 										<br />
-										<a href="account_dashboard.html" class="btn btn-primary">Cr&eacute;er mon compte</a>
+										<a ng-click="createNewUser()" class="btn btn-primary">Cr&eacute;er mon compte</a>
 									</div>
 								</div>
 							</div>
