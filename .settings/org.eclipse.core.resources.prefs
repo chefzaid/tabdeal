@@ -6,3 +6,4 @@ encoding//.link_to_grails_plugins/resources-1.2.7/grails-app/i18n/messages.prope
 encoding//grails-app/i18n=UTF-8
 encoding//grails-app/i18n/messages.properties=UTF-8
 encoding//grails-app/i18n/messages_fr.properties=UTF-8
+encoding//web-app/js/app/controllers/user-controller.js=UTF-8
