@@ -13235,3 +13235,165 @@ java.lang.NullPointerException: Cannot get property 'id' on null object
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
 	at java.lang.Thread.run(Thread.java:722)
+2014-06-06 23:58:25,213 [http-bio-8080-exec-11] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+assert f.delete()
+       | |
+       | false
+       C:\Users\Zaid\Documents\workspace-ggts\Tabdyl\target\work\tomcat\work\Tomcat\localhost\Tabdyl\grails-resources\css\main.css
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:399)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:655)
+	at org.grails.plugin.resource.ResourceProcessor.makeFileForURI(ResourceProcessor.groovy:489)
+	at org.grails.plugin.resource.ResourceProcessor$makeFileForURI$10.call(Unknown Source)
+	at org.grails.plugin.resource.ResourceMeta.beginPrepare(ResourceMeta.groovy:257)
+	at org.grails.plugin.resource.ResourceMeta$beginPrepare$0.call(Unknown Source)
+	at org.grails.plugin.resource.ResourceProcessor.prepareResource(ResourceProcessor.groovy:545)
+	at sun.reflect.GeneratedMethodAccessor180.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1031)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at org.grails.plugin.resource.ResourceProcessor$_getResourceMetaForURI_closure11.doCall(ResourceProcessor.groovy:432)
+	at sun.reflect.GeneratedMethodAccessor181.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:272)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:64)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at org.grails.plugin.resource.util.ResourceMetaStore.getOrCreateAdHocResource(ResourceMetaStore.groovy:98)
+	at org.grails.plugin.resource.util.ResourceMetaStore$getOrCreateAdHocResource$9.call(Unknown Source)
+	at org.grails.plugin.resource.ResourceProcessor.getResourceMetaForURI(ResourceProcessor.groovy:412)
+	at org.grails.plugin.resource.ResourceProcessor.getResourceMetaForURI(ResourceProcessor.groovy)
+	at org.grails.plugin.resource.ResourceProcessor$getResourceMetaForURI$36.callCurrent(Unknown Source)
+	at org.grails.plugin.resource.ResourceProcessor.processModernResource(ResourceProcessor.groovy:300)
+	at org.grails.plugin.resource.ResourceProcessor$processModernResource$43.call(Unknown Source)
+	at org.grails.plugin.resource.ProcessingFilter.doFilter(ProcessingFilter.groovy:39)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-06-06 23:58:25,248 [http-bio-8080-exec-11] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+assert f.delete()
+       | |
+       | false
+       C:\Users\Zaid\Documents\workspace-ggts\Tabdyl\target\work\tomcat\work\Tomcat\localhost\Tabdyl\grails-resources\css\main.css
+
+	at org.grails.plugin.resource.ResourceProcessor.makeFileForURI(ResourceProcessor.groovy:489)
+	at org.grails.plugin.resource.ResourceMeta.beginPrepare(ResourceMeta.groovy:257)
+	at org.grails.plugin.resource.ResourceProcessor.prepareResource(ResourceProcessor.groovy:545)
+	at org.grails.plugin.resource.ResourceProcessor$_getResourceMetaForURI_closure11.doCall(ResourceProcessor.groovy:432)
+	at org.grails.plugin.resource.util.ResourceMetaStore.getOrCreateAdHocResource(ResourceMetaStore.groovy:98)
+	at org.grails.plugin.resource.ResourceProcessor.getResourceMetaForURI(ResourceProcessor.groovy:412)
+	at org.grails.plugin.resource.ResourceProcessor.processModernResource(ResourceProcessor.groovy:300)
+	at org.grails.plugin.resource.ProcessingFilter.doFilter(ProcessingFilter.groovy:39)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-06-06 23:58:25,396 [http-bio-8080-exec-11] ERROR StackTrace  - Full Stack Trace:
+javax.servlet.ServletException: Filter execution threw an exception
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: Assertion failed: 
+
+assert f.delete()
+       | |
+       | false
+       C:\Users\Zaid\Documents\workspace-ggts\Tabdyl\target\work\tomcat\work\Tomcat\localhost\Tabdyl\grails-resources\css\main.css
+
+	at org.grails.plugin.resource.ResourceProcessor.makeFileForURI(ResourceProcessor.groovy:489)
+	at org.grails.plugin.resource.ResourceMeta.beginPrepare(ResourceMeta.groovy:257)
+	at org.grails.plugin.resource.ResourceProcessor.prepareResource(ResourceProcessor.groovy:545)
+	at org.grails.plugin.resource.ResourceProcessor$_getResourceMetaForURI_closure11.doCall(ResourceProcessor.groovy:432)
+	at org.grails.plugin.resource.util.ResourceMetaStore.getOrCreateAdHocResource(ResourceMetaStore.groovy:98)
+	at org.grails.plugin.resource.ResourceProcessor.getResourceMetaForURI(ResourceProcessor.groovy:412)
+	at org.grails.plugin.resource.ResourceProcessor.processModernResource(ResourceProcessor.groovy:300)
+	at org.grails.plugin.resource.ProcessingFilter.doFilter(ProcessingFilter.groovy:39)
+	... 3 more
+2014-06-06 23:58:25,397 [http-bio-8080-exec-11] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+assert f.delete()
+       | |
+       | false
+       C:\Users\Zaid\Documents\workspace-ggts\Tabdyl\target\work\tomcat\work\Tomcat\localhost\Tabdyl\grails-resources\css\main.css
+
+	at org.grails.plugin.resource.ResourceProcessor.makeFileForURI(ResourceProcessor.groovy:489)
+	at org.grails.plugin.resource.ResourceMeta.beginPrepare(ResourceMeta.groovy:257)
+	at org.grails.plugin.resource.ResourceProcessor.prepareResource(ResourceProcessor.groovy:545)
+	at org.grails.plugin.resource.ResourceProcessor$_getResourceMetaForURI_closure11.doCall(ResourceProcessor.groovy:432)
+	at org.grails.plugin.resource.util.ResourceMetaStore.getOrCreateAdHocResource(ResourceMetaStore.groovy:98)
+	at org.grails.plugin.resource.ResourceProcessor.getResourceMetaForURI(ResourceProcessor.groovy:412)
+	at org.grails.plugin.resource.ResourceProcessor.processModernResource(ResourceProcessor.groovy:300)
+	at org.grails.plugin.resource.ProcessingFilter.doFilter(ProcessingFilter.groovy:39)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-06-06 23:58:25,397 [http-bio-8080-exec-11] ERROR StackTrace  - Full Stack Trace:
+javax.servlet.ServletException: Filter execution threw an exception
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: Assertion failed: 
+
+assert f.delete()
+       | |
+       | false
+       C:\Users\Zaid\Documents\workspace-ggts\Tabdyl\target\work\tomcat\work\Tomcat\localhost\Tabdyl\grails-resources\css\main.css
+
+	at org.grails.plugin.resource.ResourceProcessor.makeFileForURI(ResourceProcessor.groovy:489)
+	at org.grails.plugin.resource.ResourceMeta.beginPrepare(ResourceMeta.groovy:257)
+	at org.grails.plugin.resource.ResourceProcessor.prepareResource(ResourceProcessor.groovy:545)
+	at org.grails.plugin.resource.ResourceProcessor$_getResourceMetaForURI_closure11.doCall(ResourceProcessor.groovy:432)
+	at org.grails.plugin.resource.util.ResourceMetaStore.getOrCreateAdHocResource(ResourceMetaStore.groovy:98)
+	at org.grails.plugin.resource.ResourceProcessor.getResourceMetaForURI(ResourceProcessor.groovy:412)
+	at org.grails.plugin.resource.ResourceProcessor.processModernResource(ResourceProcessor.groovy:300)
+	at org.grails.plugin.resource.ProcessingFilter.doFilter(ProcessingFilter.groovy:39)
+	... 3 more
