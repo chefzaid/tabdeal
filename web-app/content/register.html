@@ -52,13 +52,13 @@
 										<div class="form-group">
 											<label for="birthdate">Date de naissance</label>
 											<div class="row">
-												<div class="col-sm-3">
+												<div class="col-sm-4">
 													<select ng-init="days" class="form-control" id="day">
 														<option value="">Jour</option>
 														<option ng-repeat="day in days" value="{{day}}">{{day}}</option>
 													</select>
 												</div>
-												<div class="col-sm-5">
+												<div class="col-sm-4">
 													<select ng-init="months" class="form-control" id="month">
 														<option value="">Mois</option>
 														<option ng-repeat="month in months" value="{{$index + 1}}">{{month}}</option>
@@ -99,7 +99,9 @@
 											</label>
 										</div>
 										<br />
-										<a ng-click="createNewUser()" class="btn btn-primary">Cr&eacute;er mon compte</a>
+										<div class="text-center">
+											<a ng-click="createNewUser()" class="btn btn-flat">Cr&eacute;er mon compte</a>
+										</div>
 									</div>
 								</div>
 							</div>

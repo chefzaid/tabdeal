@@ -1,52 +1,43 @@
+/* Custom CSS */
 
-/* #Peter River Flat Button
-==================================================*/
-.peter-river-flat-button {
+.btn-flat {
   position: relative;
   vertical-align: top;
-  width: 200px;
   height: 40px;
-  padding: 0;
-  font-size: 22px;
+  width: auto;
+  padding: 2px 10px;
   color: white;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #3498db;
   border: 0;
-  border-bottom: 2px solid #2a8bcc;
   cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #2a8bcc;
-  box-shadow: inset 0 -2px #2a8bcc;
+  text-transform: none;
+  font-family: 'Open Sans', 'Verdana', sans-serif;
+  font-size: 22px;
+  background: #7FA50C;
+  border-bottom: 2px solid #66850A;
+  -webkit-box-shadow: inset 0 -2px #66850A;
+  box-shadow: inset 0 -2px #66850A;
 }
-.peter-river-flat-button:active {
+
+.btn-flat:active {
   top: 1px;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-.carrot-flat-button {
-  position: relative;
-  vertical-align: top;
-  width: 160px;
-  height: 30px;
-  padding: 0;
-  font-size: 14px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #e67e22;
-  border: 0;
-  border-bottom: 2px solid #da751c;
-  cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #da751c;
-  box-shadow: inset 0 -2px #da751c;
+.btn-flat-search {
+  background: #118CA0;
+  border-bottom: 2px solid #0E7281;
+  -webkit-box-shadow: inset 0 -2px #0E7281;
+  box-shadow: inset 0 -2px #0E7281;
 }
-.carrot-flat-button:active {
-  top: 1px;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+
+.btn-flat-post-ad {
+  height: 30px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /** Ads Static Example CSS (to be removed) **/
