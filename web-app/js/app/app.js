@@ -1,14 +1,22 @@
 'use strict';
 
-var tabdylApp = angular.module('tabdylApp', [                                         
+/**
+ * Angular main application file, contains:
+ * Modules, controllers, and services declarations
+ * URL routings
+ * Config global variables
+ */
+
+var tabdylApp = angular.module('tabdylApp', [
+	//Modules
 	'ngRoute',
 	
-	/* Controllers */
+	//Controllers
 	'mainController',
 	'adController',
 	'userController',
 	
-	/* Services */
+	//Services
 	'mainService',
 	'adService',
 	'userService'
@@ -18,7 +26,7 @@ tabdylApp.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
 		
-		/* Main Routes */
+		//Root routes
 		when('/home', {
 			templateUrl: 'content/home.html',
 			controller: 'HomeController'
@@ -38,7 +46,7 @@ tabdylApp.config(['$routeProvider',
 			controller: 'ExampleController'
 		}).
 		
-		/* Ad Routes */
+		//Ad routes
 		when('/post-ad', {
 			templateUrl: 'content/post-ad.html',
 			controller: 'PostAdController'
@@ -52,7 +60,7 @@ tabdylApp.config(['$routeProvider',
 			controller: 'DetailsController'
 		}).
 		
-		/* User Routes */
+		//User routes
 		when('/register', {
 			templateUrl: 'content/register.html',
 			controller: 'RegisterController'
@@ -66,8 +74,15 @@ tabdylApp.config(['$routeProvider',
 			controller: 'LoginController'
 		}).
 		
-		/* Default Route */
+		//Default route
 		otherwise({
 			redirectTo: '/home'
 		});
 }]);
+
+tabdylApp.run(function ($rootScope) {
+	//REST API Endpoint:
+    $rootScope.API_URL = 'http://localhost:8080/Tabdyl/api/';
+    //Deployed environment type: values(dev, test, prod) 
+    $rootScope.ENV = 'dev';
+});

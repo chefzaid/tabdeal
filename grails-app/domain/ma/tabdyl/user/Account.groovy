@@ -6,6 +6,7 @@ package ma.tabdyl.user
 
 class Account extends User { 
 
+	User user
 	String login
 	String password
 	Gender gender
@@ -14,12 +15,10 @@ class Account extends User {
 	Boolean receiveNews
 	Date birthDate
 	String occupation
-	List<String> wishList
+	String wishList
 	Date dateCreated
 	Rating rating
 	Boolean isDeleted
-	
-	static hasMany = [wishList:String]
 	
 	static constraints = {
 		login size: 6..16, blank: false, unique: true
